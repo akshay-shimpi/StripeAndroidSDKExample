@@ -4,7 +4,7 @@ plugins {
 
 android {
     compileSdkVersion 30
-    flavorDimensions 'version'
+    //flavorDimensions 'version'
     defaultConfig {
         applicationId "com.example.stripeandroidexample"
         minSdkVersion 21
@@ -22,7 +22,7 @@ android {
         }
     }
 
-    productFlavors{
+    /*productFlavors{
         //prods
         dev{
             dimension 'version'
@@ -30,7 +30,7 @@ android {
         prod{
             dimension 'version'
         }
-    }
+    }*/
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8

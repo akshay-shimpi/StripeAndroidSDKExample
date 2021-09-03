@@ -26,3 +26,8 @@ jobs:
       run: ./gradlew build
     - name: Create Build APK
       run: ./gradlew assembleprodRelease
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.4
+      with:
+        name: app
+        path: app/APK/development.apk

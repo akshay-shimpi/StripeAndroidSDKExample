@@ -23,6 +23,7 @@ android {
     }
 
     productFlavors{
+        //prods
         dev{
             dimension 'version'
         }

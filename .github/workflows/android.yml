@@ -24,8 +24,12 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+    - name: Create Build APK
+      run: ./gradlew assembleRelease
+    - name: creating Folders
+      run: mkdir app\build\outputs\apk\release
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.4
       with:
         name: app
-        path: app/debug/app-debug.apk
+        path: app\build\outputs\apk\release\app-release-unsigned.apk

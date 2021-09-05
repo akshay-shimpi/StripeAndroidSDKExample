@@ -28,4 +28,4 @@ jobs:
       uses: actions/upload-artifact@v2.2.4
       with:
         name: app
-        path: ${{ github.workspace }}/app/file.apk
+        path: app/debug/app-debug.apk
